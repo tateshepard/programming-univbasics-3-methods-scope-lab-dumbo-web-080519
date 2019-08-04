@@ -8,16 +8,10 @@ def toadstool
   puts status
 end
 
-def any_link 
-  link = "It's Dangerous To Go Alone! Take this."
-  puts link
-  expect{any_link(link)}.to output("It's Dangerous To Go Alone! Take this.\n").to_stdout
+def link
+  puts "It's Dangerous To Go Alone! Take This."
 end
 
-describe "any_phrase" do
-  it "takes in an argument and puts out the catch phrase" do 
-    phrase = "Do A Barrel Roll!" 
-    puts phrase
-    expect{any_phrase(phrase)}.to output("Do A Barrel Roll!\n").to_stdout 
-  end
+def any_phrase(phrase)
+  puts phrase
 end
